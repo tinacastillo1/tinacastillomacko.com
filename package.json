@@ -1,0 +1,30 @@
+{
+  "name": "tinacastillo",
+  "version": "1.0.0",
+  "description": "tinacastillo.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tina Castillo Macko",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.1",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-include": "^2.3.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

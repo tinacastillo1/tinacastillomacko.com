@@ -1,0 +1,42 @@
+// Footer Styles
+// ------------------------------------------------------------------------------
+
+footer{
+	background-color: $gray;
+	color: #fff;
+	border-bottom: 10px solid $fuschia;
+	padding-top: 2em;
+
+	h1,h2,h3,h4,h5,h6{
+		color: #fff;
+	}
+}
+
+.social{
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	&__item{
+		margin:0 0.5em 0 0;
+		padding: 0;
+	}
+
+	&__link{
+		border-bottom: none;
+
+		&:hover, &:focus{
+			border-bottom: none;
+		}
+	}
+
+	&__icon{
+		width: 24px;
+		height: 24px;
+		fill: #fff;
+
+		&:hover, &:active{
+			fill: $fuschia;
+		}
+	}
+}

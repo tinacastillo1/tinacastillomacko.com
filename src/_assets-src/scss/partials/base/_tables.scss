@@ -1,0 +1,22 @@
+// Table Styles
+// ------------------------------------------------------------------------------
+
+table{
+	width: 100%;
+	border: none;
+	margin: 0 0 1.5em 0;
+
+	tr{
+		border: none;
+
+		td, th{
+			padding: 0.5em 1em;
+			text-align: left;
+		}
+	}
+
+	thead tr{
+		border: none;
+		font-weight: 500;
+	}
+}

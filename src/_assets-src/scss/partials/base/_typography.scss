@@ -1,0 +1,185 @@
+// Typography styles
+// ------------------------------------------------------------------------------
+
+html{
+	-ms-text-size-adjust: 100%;
+  	-webkit-text-size-adjust: 100%;
+  	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  	font-size: 20px;
+  	background-color: $fuschia;
+  	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+	@include clearfix;
+	text-rendering: optimizeLegibility;
+	font-family: $body;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $gray;
+	height: 100%;
+}
+
+//default header styles
+h1, h2, h3, h4, h5, h6{
+	padding: 0.5em 0 0 0;
+	margin: 0 0 0.5em 0;
+	font-family: $heading;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	color: $gray;
+
+	a{
+		border-bottom: none;
+
+		&:visited{
+			color: $gray;
+		}
+
+		&:hover, &:focus{
+			border-bottom: none;
+			color: $gray;
+		}
+	}
+}
+
+h1{
+	font-size: 3em; /*60 ÷ 16 = 2.5em*/
+
+	@include breakpoint(medium){
+		font-size: 3.5em; /*72 ÷ 16 = 2.5em*/
+	}
+}
+
+h2{
+	font-size: 2em;
+
+	@include breakpoint(medium){
+		font-size: 3em;
+		font-family: $accent;
+	}
+}
+		
+h3{
+	font-size: 1.25em;
+
+	@include breakpoint(medium){
+		font-size: 1.5em;
+	}
+}
+h4{
+	font-size: 1.125em;
+
+	@include breakpoint(medium){
+		font-size: 1.25em;
+	}
+}
+h5{
+	font-size: 1em;
+
+	@include breakpoint(medium){
+		font-size: 1.125em;
+	}
+}
+h6{
+	font-size: 1em;
+}
+
+.headline-homepage{
+	font-size: 2.25em;
+
+	@include breakpoint(medium){
+		font-size: 2em;
+		font-family: $body;
+	}
+}
+
+// Change spacing if in a content area
+h1, h2, h3, h4, h5, h6{
+	.content &{
+		margin-bottom: 0.25em;
+	}
+}
+
+::-moz-selection {
+    background-color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #fff;
+    text-shadow: none;
+}
+
+a{
+	color: $gray;
+	text-decoration: none;
+	border-bottom: 2px solid #fff;
+	cursor: pointer;
+	@include transition(all .2s ease-in);
+
+	&:visited{
+		color: $gray;
+	}
+
+	&:active, &:focus, &:hover{
+		color: #fff;
+	}
+}
+
+p{
+	padding: 0;
+	margin: 0 0 1.5em 0;
+	@include clearfix;
+}
+
+b, strong{
+	font-weight: 700;
+}
+
+img { 
+	max-width: 100%;
+	margin: auto;
+}
+
+blockquote{
+	font-family: $heading;
+	font-size: 2em; /*48 ÷ 16 = 2.5em*/
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+
+	@include breakpoint(medium){
+		font-size: 2.5em; /*60 ÷ 16 = 2.5em*/
+	}
+}
+
+mark{
+	padding: 0 3px;
+	background-color: #fff;
+}
+
+::-moz-selection {
+    background-color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #fff;
+    text-shadow: none;
+}
+
+
+hr{
+	margin: 2em 0;
+}

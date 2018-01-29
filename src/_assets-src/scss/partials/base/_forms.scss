@@ -1,0 +1,143 @@
+// Form styles
+// ------------------------------------------------------------------------------
+
+legend{
+	font-size: 1.125em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 1em 0 0 0;
+	margin: 0 0 0.25em 0;
+	color: #000;
+}
+
+abbr, abbr[title]{
+	border:none;
+	text-decoration: none;
+}
+
+fieldset{
+	@include clearfix;
+	border: 0;
+	padding: 0;
+	margin: 0 0 1.5em 0;
+
+	ol,ul{
+		margin: 0;
+		padding:0;
+		list-style-type: none;
+	}
+}
+
+form li:before { content: none; }
+
+label{
+	display: block;
+	font-size: 1em;
+	margin: 1em 0 0.25em 0;
+	font-family: $heading;
+
+	/* How to hide a label, but still have it for accessability */
+	/*&[for=BirthMonth], &[for=BirthYear], &[for=search-header-input]{
+		position: absolute;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px 1px 1px 1px);
+		clip: rect(1px, 1px, 1px, 1px);
+	}*/
+}
+
+.req{
+	color: red;
+	text-transform: uppercase;
+}
+
+label.error{
+	color: red;
+	position: absolute;
+	left: auto;
+	right: 0;
+	top: 0;
+
+	@include breakpoint($medium){
+		left: -12%;
+		right: auto;
+	}
+}
+
+input, textarea{
+	display: block;
+	//width: 100%;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	font-size: 0.875em;
+	color: #000;
+	border: 1px solid #ccc;
+	padding: 0.625em 0;
+	margin-bottom: 1em;
+	text-indent: 2px;
+
+	&:focus{
+		border:1px solid #000;
+	}		
+}
+
+input{
+	&[type="submit"]{
+		text-align: center;
+	}
+}
+
+.input-group{
+	display: table;
+	width: 100%;
+	position: relative;
+
+	input, button{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+textarea{
+	min-height: 150px;
+}
+
+select{
+	width: 100%;
+	border: 1px solid #ccc;
+	margin: 0 1em 0 0;
+	padding: 0;
+	background-color: #fff;
+	font-size: 0.875em;
+	text-indent: 2px;
+
+	option{
+		font-weight: 400;
+		font-family: $body;
+		text-transform: uppercase;
+		padding: 0.46875em;
+	}
+}
+
+//Checkbox styles
+.field, .field-info{
+	display: inline-block;
+	vertical-align: top;
+
+	input{ 
+		width: 1em;
+
+		&[type="checkbox"]{
+			width: 1.5em;
+			height: 1.5em;
+			margin-bottom: 0;
+			//width: 2em;
+			//height: 2em;
+		}
+	}
+}
+.field-info{
+	transform: translateY(-2px);
+}

@@ -1,0 +1,28 @@
+// Dependencies
+// ------------------------------------------------------------------------------
+
+// Site settings
+// ------------------------------------------------------------------------------
+@import "partials/settings";
+
+// Base styles
+// ------------------------------------------------------------------------------
+@import "partials/base/normalize";
+@import "partials/base/mixins";
+@import "partials/base/typography";
+@import "partials/base/buttons";
+@import "partials/base/lists";
+@import "partials/base/tables";
+@import "partials/base/forms";
+@import "partials/base/animations";
+@import "partials/base/print";
+
+// Layout styles
+// ------------------------------------------------------------------------------
+@import "partials/layout/scaffolding";
+@import "partials/layout/header";
+@import "partials/layout/footer";
+
+// Component styles
+// ------------------------------------------------------------------------------
+@import 'partials/components/tout.scss';

@@ -1,0 +1,64 @@
+// Buttons
+// ------------------------------------------------------------------------------
+
+/*doc
+
+Button styles can be applied to the following elements: anchor, button and input[type="submit"]
+
+<a href="/" class="btn-primary">Primary</a>
+
+<button type="button" href="" class="btn-primary">Primary</button>
+<button type="button" href="" class="btn-secondary">More</button>
+*/
+
+button{
+
+}
+
+%btn-base{
+
+  &:hover{
+    border-bottom: none;
+  }
+  
+}
+
+.btn-primary{
+  @extend %btn-base;
+
+  &:visited{
+
+  }
+
+  &:hover, &:active, &:focus{
+    
+  }
+  
+}
+
+.btn-secondary{
+  @extend %btn-base;
+
+  &:visited{
+
+  }
+
+  &:hover, &:active{
+
+  }
+
+}
+
+.btn-tertiary{
+  @extend %btn-base;
+
+  &:visited{
+
+  }
+
+  &:hover, &:active, &:focus{
+
+  }
+}
+
+

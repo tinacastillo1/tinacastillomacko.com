@@ -1,0 +1,86 @@
+// Mediaqueries
+// ------------------------------------------------------------------------------
+@mixin breakpoint($point) {
+	@if $oldIE {
+		@content;
+	}@else{
+		@each $breakpoint in $breakpoints {
+			@if $point == nth($breakpoint, 1) {
+				@media (min-width: nth($breakpoint, 2)) {
+					@content;
+				}
+			}
+		}
+	}
+}
+
+
+// Clearfix mixin
+// ------------------------------------------------------------------------------
+@mixin clearfix {
+	&:after, &:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	& {
+		*zoom: 1;
+	}
+}
+
+
+// Full-width mixin
+// ------------------------------------------------------------------------------
+@mixin full-width{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+// Max-width mixin
+// ------------------------------------------------------------------------------
+@mixin maxwidth{
+	margin: 0 auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	max-width: 1232px;
+	@include clearfix;
+}
+
+
+// Transitions
+// ------------------------------------------------------------------------------
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+// Visually Hidden to extend.
+// ------------------------------------------------------------------------------
+/* Hide only visually, but have it available for screenreaders: */
+%vh { 
+	border: 0; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: absolute; 
+	width: 1px;
+	
+	&.focusable:active,  
+	&.focusable:focus {
+		clip: auto; 
+		height: auto; 
+		margin: 0; 
+		overflow: visible; 
+		position: static; 
+		width: auto; 
+	}
+}

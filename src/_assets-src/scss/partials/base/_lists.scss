@@ -1,0 +1,59 @@
+// List Styles
+// ------------------------------------------------------------------------------
+
+
+// Basic lists
+ul, ol{
+	padding: 0;
+	margin:0 0 1.5em 0.5em;
+	list-style-type: none;
+
+	ul{
+		margin-left: 1em;
+	}
+
+	li{
+		margin-bottom: 0.5em;
+
+		&:last-child{ margin-bottom: 0; }
+	}
+}
+
+//Color squares
+.color-squares__list{
+	margin: 0;
+	padding: 0;
+	@include clearfix;
+	list-style-type: none;
+	display: flex;
+
+	li{
+
+		.square{
+			width: 100px;
+			height: 100px;
+
+			&--gray{
+				background-color:$gray;
+			}
+			&--fuschia{
+				background-color: $fuschia;
+			}
+			&--white{
+				background-color: #fff;
+			}
+			&--green{
+				background-color:$green;
+			}
+			&--yellow{
+				background-color:$yellow;
+			}
+			&--teal{
+				background-color:$teal;
+			}
+			&--orange{
+				background-color:$orange;
+			}
+		}
+	}
+}

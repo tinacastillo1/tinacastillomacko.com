@@ -1,0 +1,55 @@
+// Site settings
+// ------------------------------------------------------------------------------
+
+$oldIE: false !default;
+
+// Media Queries
+// ------------------------------------------------------------------------------
+
+// https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints
+$breakpoints: (
+	small:  360px,  /* Smartphones --------------- */
+	small-medium: 600px, /* Custom --------------- */
+	medium: 768px,  /* Tablets Portrait ---------- */
+	med-large: 1024px, /* Custom ---------- */
+	large:  1280px, /* Desktops and laptops ------ */
+	xlarge: 1824px  /* Large screens ------------- */
+);
+
+$small:  map-get($breakpoints, small);
+$small-medium:  map-get($breakpoints, small-medium);
+$medium: map-get($breakpoints, medium),'no-query' true;
+$med-large: map-get($breakpoints, med-large),'no-query' true;
+$large:  map-get($breakpoints, large),'no-query' true;
+$xlarge: map-get($breakpoints, xlarge),'no-query' true;
+
+// Colors
+// ------------------------------------------------------------------------------
+
+$light-gray: #E9E8E6;
+$gray: #343434;
+$teal: #7DD5C9;
+$fuschia: #EB9EE5;
+$yellow: #fcdb7c;
+$orange: #fc9d7c;
+$green: #d5de74;
+
+// Fonts
+// ------------------------------------------------------------------------------
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../fonts/BebasNeue-webfont.eot');
+	src: local('☺'), url('../fonts/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue-webfont.svg#webfontj1CI1MAi') format('svg');
+}
+
+$heading: 'Georgia', serif; //Georgia
+//font weight = 400
+//font-syle = normal
+
+$accent: 'BebasNeueRegular', sans-serif; //Bebas Neue
+//font weight = 400
+//font-syle = normal
+
+$body: georgia, serif; //Georgia 
+//font-style: normal
+//font-weight = 400

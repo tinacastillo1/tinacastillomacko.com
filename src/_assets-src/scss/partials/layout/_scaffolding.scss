@@ -1,0 +1,90 @@
+// Scaffolding styles are declared here. e.g containers, grid
+// ------------------------------------------------------------------------------
+
+
+main{
+	@include full-width;
+	@include clearfix;
+	padding:0;
+
+	&.orange{
+		background-color: $orange;
+	}
+
+	&.green{
+		background-color: $green;
+	}
+
+	&.teal{
+		background-color: $teal;
+	}
+
+	&.yellow{
+		background-color: $yellow;
+	}
+}
+
+
+//Content Styles
+.content{
+
+	&--mid{
+		max-width: 800px;
+		text-align: center;
+		margin: auto;
+	}
+}
+
+.wrapper{
+	@include maxwidth;
+	position: relative;
+
+	&--no-padding{
+		padding: 0;
+	}
+
+	//limit the copy width to 800px for readability
+	.content &{
+		max-width: 800px;
+	}
+}
+
+
+//Section Styles
+section{
+	@include clearfix;
+	padding: 2em 0;
+
+	&:last-child{ padding-bottom: 4em; }
+}
+
+
+// Responsive grid
+.column{
+	display: grid;
+
+	&--1, &--2, &--2t, &--3, &--4{
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+		//grid-gap: 1em;
+	}
+
+	@include breakpoint(medium){
+		&--2{ 
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&--2t{
+			grid-template-columns: 2fr 1fr;
+		}
+
+		&--3{
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		&--4{
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}

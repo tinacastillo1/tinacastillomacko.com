@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  {% include head.html %}
+  <body>
+  	
+    {% include header.html %}
+
+	<main {% if page.style %}class="{{ page.style | escape }}"{% endif %}>
+
+		{{content}}
+	
+	</main>
+    {% include footer.html %}
+    {% include foot.html %}
+  </body>
+</html>
