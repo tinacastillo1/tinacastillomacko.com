@@ -15,8 +15,16 @@ style: yellow
 		<h3>Website Redesign</h3>
 
 		<p>
-			Grove City College has a unique way of offering tuition aid, which often confused applicants in the past when applying via the college's website. The fully responsive website redesign easily solves student's past problems and has led to an increase in applicants.
+			Grove City College has a unique way of offering tuition aid, which often confused past applicants when they applied to the college through the website. The fully responsive website redesign easily solves student's past problems and has led to an increase in applicants.
 		</p>
+
+		As the lead developer on this project, I worked with Smith Bros Agency to:
+
+		<ul>
+			<li>Meet the client's technical requirements of building the site using the CMS, DotNetNuke (DNN)</li>
+			<li>Collaborate with the creative team to build interactive style guides, component-based prototypes, and templates that were later converted into a DNN theme</li>
+			<li>Present each phase of the website to the client and respond to any client's needs using layman's terms</li>
+		</ul>
 
 		<a href="http://www.gcc.edu/" target="_blank">Visit website</a>
 
@@ -39,12 +47,20 @@ style: yellow
 
 		<div class="column column--2">
 
-			<a class="tout" href="/work/truroots.html">
-				<img src="/assets/img/work/truroots/truroots.jpg" alt="TruRoots" />
-			</a><!--/.tout-->
-
 			<a class="tout" href="/work/art-institutes.html">
 				<img src="/assets/img/work/art-institutes/ai.jpg" alt="Art Institutes" />
+				<div class="tout__description">
+	            	<span class="tout__description__title">The Art Institutes</span>
+	            	<span class="tout__description__link">View project</span>
+	            </div>
+			</a><!--/.tout-->
+
+			<a class="tout" href="/work/truroots.html">
+				<img src="/assets/img/work/truroots/truroots.jpg" alt="TruRoots" />
+				<div class="tout__description">
+	            	<span class="tout__description__title">TruRoots</span>
+	            	<span class="tout__description__link">View project</span>
+	            </div>
 			</a><!--/.tout-->
 
 		</div><!--/.columm-->

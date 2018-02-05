@@ -27,7 +27,7 @@ gulp.task('styles', function(){
     .pipe(sass())
     .pipe(postcss([ autoprefixer({
       browsers: ['last 3 versions'],
-      grid: false 
+      grid: true
     }) ]))
     .pipe(gulp.dest('./src/assets/css/'))
     .pipe(cssmin())

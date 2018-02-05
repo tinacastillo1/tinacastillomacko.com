@@ -6,8 +6,12 @@ header{
 	h1{
 		text-align: center;
 		padding-top: 0;
-		margin-top: 0.5em;
+		margin: 0.25em auto;
 		line-height: 0;
+
+		@include breakpoint(medium){
+			margin: 0.5em auto;
+		}
 	}
 
 	.logo{
@@ -15,7 +19,7 @@ header{
 		padding: 0.25em;
 		display: inline-block;
 
-		&:hover, &:focus{
+		&:hover, &:focus, &:active{
 			background-color: rgba(255, 255, 255, 0.75);
 		}
 	}

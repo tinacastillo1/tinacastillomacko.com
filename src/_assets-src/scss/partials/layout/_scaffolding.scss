@@ -67,7 +67,7 @@ section{
 		grid-template-columns: 1fr;
 		justify-content: center;
 		align-items: center;
-		//grid-gap: 1em;
+		grid-gap: 0;
 	}
 
 	@include breakpoint(medium){

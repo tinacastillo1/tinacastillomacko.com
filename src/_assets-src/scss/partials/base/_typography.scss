@@ -24,7 +24,7 @@ body{
 	font-size: 1em;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1.4;
 	color: $gray;
 	height: 100%;
 }
@@ -71,32 +71,20 @@ h2{
 }
 		
 h3{
-	font-size: 1.25em;
-
-	@include breakpoint(medium){
-		font-size: 1.5em;
-	}
+	font-size: 1.5em;
 }
 h4{
-	font-size: 1.125em;
-
-	@include breakpoint(medium){
-		font-size: 1.25em;
-	}
+	font-size: 1.25em;
 }
 h5{
-	font-size: 1em;
-
-	@include breakpoint(medium){
-		font-size: 1.125em;
-	}
+	font-size: 1.125em;
 }
 h6{
 	font-size: 1em;
 }
 
 .headline-homepage{
-	font-size: 2.25em;
+	font-size: 1.75em;
 
 	@include breakpoint(medium){
 		font-size: 2em;

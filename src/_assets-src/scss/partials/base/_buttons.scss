@@ -11,54 +11,54 @@ Button styles can be applied to the following elements: anchor, button and input
 <button type="button" href="" class="btn-secondary">More</button>
 */
 
-button{
+// button{
 
-}
+// }
 
-%btn-base{
+// %btn-base{
 
-  &:hover{
-    border-bottom: none;
-  }
+//   &:hover{
+//     border-bottom: none;
+//   }
   
-}
+// }
 
-.btn-primary{
-  @extend %btn-base;
+// .btn-primary{
+//   @extend %btn-base;
 
-  &:visited{
+//   &:visited{
 
-  }
+//   }
 
-  &:hover, &:active, &:focus{
+//   &:hover, &:active, &:focus{
     
-  }
+//   }
   
-}
+// }
 
-.btn-secondary{
-  @extend %btn-base;
+// .btn-secondary{
+//   @extend %btn-base;
 
-  &:visited{
+//   &:visited{
 
-  }
+//   }
 
-  &:hover, &:active{
+//   &:hover, &:active{
 
-  }
+//   }
 
-}
+// }
 
-.btn-tertiary{
-  @extend %btn-base;
+// .btn-tertiary{
+//   @extend %btn-base;
 
-  &:visited{
+//   &:visited{
 
-  }
+//   }
 
-  &:hover, &:active, &:focus{
+//   &:hover, &:active, &:focus{
 
-  }
-}
+//   }
+// }
 
 

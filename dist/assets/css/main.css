@@ -391,7 +391,7 @@ body {
   font-size: 1em;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.4;
   color: #343434;
   height: 100%; }
   body:after, body:before {
@@ -434,28 +434,19 @@ h2 {
       font-family: "BebasNeueRegular", sans-serif; } }
 
 h3 {
-  font-size: 1.25em; }
-  @media (min-width: 768px) {
-    h3 {
-      font-size: 1.5em; } }
+  font-size: 1.5em; }
 
 h4 {
-  font-size: 1.125em; }
-  @media (min-width: 768px) {
-    h4 {
-      font-size: 1.25em; } }
+  font-size: 1.25em; }
 
 h5 {
-  font-size: 1em; }
-  @media (min-width: 768px) {
-    h5 {
-      font-size: 1.125em; } }
+  font-size: 1.125em; }
 
 h6 {
   font-size: 1em; }
 
 .headline-homepage {
-  font-size: 2.25em; }
+  font-size: 1.75em; }
   @media (min-width: 768px) {
     .headline-homepage {
       font-size: 2em;
@@ -539,17 +530,13 @@ Button styles can be applied to the following elements: anchor, button and input
 <button type="button" href="" class="btn-primary">Primary</button>
 <button type="button" href="" class="btn-secondary">More</button>
 */
-.btn-primary:hover, .btn-secondary:hover, .btn-tertiary:hover {
-  border-bottom: none; }
-
 ul, ol {
   padding: 0;
-  margin: 0 0 1.5em 0.5em;
-  list-style-type: none; }
-  ul ul, ol ul {
-    margin-left: 1em; }
+  margin: 0.5em 0 1.5em 1.5em;
+  list-style-type: square; }
   ul li, ol li {
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    font-size: 0.85em; }
     ul li:last-child, ol li:last-child {
       margin-bottom: 0; }
 
@@ -830,36 +817,46 @@ section {
     padding-bottom: 4em; }
 
 .column {
+  display: -ms-grid;
   display: grid; }
   .column--1, .column--2, .column--2t, .column--3, .column--4 {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    grid-gap: 0; }
   @media (min-width: 768px) {
     .column--2 {
-      grid-template-columns: 1fr 1fr; }
+      -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr; }
     .column--2t {
-      grid-template-columns: 2fr 1fr; }
+      -ms-grid-columns: 2fr 1fr;
+          grid-template-columns: 2fr 1fr; }
     .column--3 {
-      grid-template-columns: repeat(3, 1fr); }
+      -ms-grid-columns: (1fr)[3];
+          grid-template-columns: repeat(3, 1fr); }
     .column--4 {
-      grid-template-columns: repeat(4, 1fr); } }
+      -ms-grid-columns: (1fr)[4];
+          grid-template-columns: repeat(4, 1fr); } }
 
 header h1 {
   text-align: center;
   padding-top: 0;
-  margin-top: 0.5em;
+  margin: 0.25em auto;
   line-height: 0; }
+  @media (min-width: 768px) {
+    header h1 {
+      margin: 0.5em auto; } }
 
 header .logo {
   background-color: rgba(255, 255, 255, 0.25);
   padding: 0.25em;
   display: inline-block; }
-  header .logo:hover, header .logo:focus {
+  header .logo:hover, header .logo:focus, header .logo:active {
     background-color: rgba(255, 255, 255, 0.75); }
 
 footer {
@@ -869,13 +866,18 @@ footer {
   padding-top: 2em; }
   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
     color: #fff; }
+  footer a {
+    color: #fff; }
+    footer a:hover, footer a:focus, footer a:active {
+      color: #EB9EE5; }
 
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style-type: none; }
   .social__item {
     margin: 0 0.5em 0 0;
     padding: 0; }
@@ -884,11 +886,12 @@ footer {
     .social__link:hover, .social__link:focus {
       border-bottom: none; }
   .social__icon {
-    width: 24px;
-    height: 24px;
-    fill: #fff; }
-    .social__icon:hover, .social__icon:active {
-      fill: #EB9EE5; }
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    border: 3px solid transparent; }
+    .social__icon:hover, .social__icon:active, .social__icon:focus {
+      border: 3px solid #EB9EE5; }
 
 .tout {
   border-bottom: none;
@@ -907,14 +910,37 @@ footer {
     transition: all 0.2s ease-in; }
   .tout:hover:after {
     opacity: 0; }
-  .tout:hover, .tout:focus {
+  .tout:hover, .tout:focus, .tout:active {
     border-bottom: none; }
-    .tout:hover img, .tout:focus img {
+    .tout:hover .tout__description, .tout:focus .tout__description, .tout:active .tout__description {
+      background-color: #EB9EE5; }
+    .tout:hover img, .tout:focus img, .tout:active img {
       -webkit-filter: saturate(1);
-      filter: saturate(1); }
+              filter: saturate(1); }
+  .tout__description {
+    position: absolute;
+    background-color: rgba(235, 158, 229, 0.65);
+    bottom: 10%;
+    letter-spacing: 0.5px;
+    padding: 0.25em 1em;
+    color: #fff;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+    .tout__description__title {
+      font-family: "BebasNeueRegular", sans-serif;
+      display: block;
+      margin-bottom: -4px; }
+    .tout__description__link {
+      font-family: georgia, serif;
+      font-size: 0.75em;
+      display: block; }
+      .tout__description__link:after {
+        content: url(../img/svg/arrow.svg);
+        margin-left: 5px; }
   .tout img {
     -webkit-filter: saturate(0);
-    filter: saturate(0);
+            filter: saturate(0);
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in; }

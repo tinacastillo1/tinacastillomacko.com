@@ -10,12 +10,21 @@ footer{
 	h1,h2,h3,h4,h5,h6{
 		color: #fff;
 	}
+
+	a{
+		color: #fff;
+
+		&:hover, &:focus, &:active{
+			color: $fuschia;
+		}
+	}
 }
 
 .social{
 	display: flex;
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 
 	&__item{
 		margin:0 0.5em 0 0;
@@ -31,12 +40,13 @@ footer{
 	}
 
 	&__icon{
-		width: 24px;
-		height: 24px;
+		width: 30px;
+		height: 30px;
 		fill: #fff;
+		border: 3px solid transparent;
 
-		&:hover, &:active{
-			fill: $fuschia;
+		&:hover, &:active, &:focus{
+			border: 3px solid $fuschia;
 		}
 	}
 }

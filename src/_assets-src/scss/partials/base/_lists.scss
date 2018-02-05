@@ -5,15 +5,12 @@
 // Basic lists
 ul, ol{
 	padding: 0;
-	margin:0 0 1.5em 0.5em;
-	list-style-type: none;
-
-	ul{
-		margin-left: 1em;
-	}
+	margin: 0.5em 0 1.5em 1.5em;
+	list-style-type: square;
 
 	li{
 		margin-bottom: 0.5em;
+		font-size: 0.85em;
 
 		&:last-child{ margin-bottom: 0; }
 	}

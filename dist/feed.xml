@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-29T16:35:06-05:00</updated><id>/</id><title type="html">Tina Castillo Macko</title><subtitle></subtitle><entry><title type="html">Grove City College</title><link href="/work/grove-city-college.html" rel="alternate" type="text/html" title="Grove City College" /><published>2018-01-17T00:00:00-05:00</published><updated>2018-01-17T00:00:00-05:00</updated><id>/work/grove-city-college</id><content type="html" xml:base="/work/grove-city-college.html">&lt;section class=&quot;content&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-02-05T17:22:02-05:00</updated><id>/</id><title type="html">Tina Castillo Macko</title><subtitle></subtitle><entry><title type="html">Grove City College</title><link href="/work/grove-city-college.html" rel="alternate" type="text/html" title="Grove City College" /><published>2018-01-17T00:00:00-05:00</published><updated>2018-01-17T00:00:00-05:00</updated><id>/work/grove-city-college</id><content type="html" xml:base="/work/grove-city-college.html">&lt;section class=&quot;content&quot;&gt;
 	&lt;div class=&quot;wrapper&quot;&gt;
 
 		&lt;h2&gt;Grove City College&lt;/h2&gt;
@@ -6,8 +6,16 @@
 		&lt;h3&gt;Website Redesign&lt;/h3&gt;
 
 		&lt;p&gt;
-			Grove City College has a unique way of offering tuition aid, which often confused applicants in the past when applying via the college's website. The fully responsive website redesign easily solves student's past problems and has led to an increase in applicants.
+			Grove City College has a unique way of offering tuition aid, which often confused past applicants when they applied to the college through the website. The fully responsive website redesign easily solves student's past problems and has led to an increase in applicants.
 		&lt;/p&gt;
+
+		As the lead developer on this project, I worked with Smith Bros Agency to:
+
+		&lt;ul&gt;
+			&lt;li&gt;Meet the client's technical requirements of building the site using the CMS, DotNetNuke (DNN)&lt;/li&gt;
+			&lt;li&gt;Collaborate with the creative team to build interactive style guides, component-based prototypes, and templates that were later converted into a DNN theme&lt;/li&gt;
+			&lt;li&gt;Present each phase of the website to the client and respond to any client's needs using layman's terms&lt;/li&gt;
+		&lt;/ul&gt;
 
 		&lt;a href=&quot;http://www.gcc.edu/&quot; target=&quot;_blank&quot;&gt;Visit website&lt;/a&gt;
 
@@ -30,12 +38,20 @@
 
 		&lt;div class=&quot;column column--2&quot;&gt;
 
-			&lt;a class=&quot;tout&quot; href=&quot;/work/truroots.html&quot;&gt;
-				&lt;img src=&quot;/assets/img/work/truroots/truroots.jpg&quot; alt=&quot;TruRoots&quot; /&gt;
-			&lt;/a&gt;&lt;!--/.tout--&gt;
-
 			&lt;a class=&quot;tout&quot; href=&quot;/work/art-institutes.html&quot;&gt;
 				&lt;img src=&quot;/assets/img/work/art-institutes/ai.jpg&quot; alt=&quot;Art Institutes&quot; /&gt;
+				&lt;div class=&quot;tout__description&quot;&gt;
+	            	&lt;span class=&quot;tout__description__title&quot;&gt;The Art Institutes&lt;/span&gt;
+	            	&lt;span class=&quot;tout__description__link&quot;&gt;View project&lt;/span&gt;
+	            &lt;/div&gt;
+			&lt;/a&gt;&lt;!--/.tout--&gt;
+
+			&lt;a class=&quot;tout&quot; href=&quot;/work/truroots.html&quot;&gt;
+				&lt;img src=&quot;/assets/img/work/truroots/truroots.jpg&quot; alt=&quot;TruRoots&quot; /&gt;
+				&lt;div class=&quot;tout__description&quot;&gt;
+	            	&lt;span class=&quot;tout__description__title&quot;&gt;TruRoots&lt;/span&gt;
+	            	&lt;span class=&quot;tout__description__link&quot;&gt;View project&lt;/span&gt;
+	            &lt;/div&gt;
 			&lt;/a&gt;&lt;!--/.tout--&gt;
 
 		&lt;/div&gt;&lt;!--/.columm--&gt;
@@ -49,8 +65,16 @@
 		&lt;h3&gt;Website Redesign&lt;/h3&gt;
 
 		&lt;p&gt;
-			Harnessing Sitecore's multi-site capabilities, the fully responsive, 30+ sites that make up The Art Institute's website helps users to narrow in on the location that's right for them and to apply with ease.
+			Harnessing Sitecore's multi-site capabilities, the fully responsive, 30+ sites that make up The Art Institute's website help users to narrow in on the location that's right for them and to apply with ease.
 		&lt;/p&gt;
+
+		As the lead developer on this project, I worked with Smith Bros Agency to:
+
+		&lt;ul&gt;
+			&lt;li&gt;Map out with the UX team how the national and local site's components would work together and to solve complex navigation issues&lt;/li&gt;
+			&lt;li&gt;Work with the creative team to create a look that would be easily recognizable from either a local site or the national site, but still be different enough to distinguish between the two&lt;/li&gt;
+			&lt;li&gt;Create a living style guide, rapidly build interactive prototypes, and create a modularly designed front-end that was later converted into Sitecore components&lt;/li&gt;
+		&lt;/ul&gt;
 
 		&lt;a href=&quot;https://www.artinstitutes.edu/&quot; target=&quot;_blank&quot;&gt;Visit website&lt;/a&gt;
 
@@ -75,10 +99,18 @@
 
 			&lt;a class=&quot;tout&quot; href=&quot;/work/truroots.html&quot;&gt;
 				&lt;img src=&quot;/assets/img/work/truroots/truroots.jpg&quot; alt=&quot;TruRoots&quot; /&gt;
+				&lt;div class=&quot;tout__description&quot;&gt;
+	            	&lt;span class=&quot;tout__description__title&quot;&gt;TruRoots&lt;/span&gt;
+	            	&lt;span class=&quot;tout__description__link&quot;&gt;View project&lt;/span&gt;
+	            &lt;/div&gt;
 			&lt;/a&gt;&lt;!--/.tout--&gt;
 
-			&lt;a class=&quot;tout&quot; href=&quot;/work/grove-city-college.html&quot;&gt;
-				&lt;img src=&quot;/assets/img/work/grove-city-college/gcc.jpg&quot; alt=&quot;Grove City College&quot; /&gt;
+			&lt;a class=&quot;tout&quot; href=&quot;/work/tribe-hummus.html&quot;&gt;
+				&lt;img src=&quot;/assets/img/work/tribe-hummus/tribe-hummus.jpg&quot; alt=&quot;Tribe Hummus&quot; /&gt;
+				&lt;div class=&quot;tout__description&quot;&gt;
+	            	&lt;span class=&quot;tout__description__title&quot;&gt;Tribe Hummus&lt;/span&gt;
+	            	&lt;span class=&quot;tout__description__link&quot;&gt;View project&lt;/span&gt;
+	            &lt;/div&gt;
 			&lt;/a&gt;&lt;!--/.tout--&gt;
 
 		&lt;/div&gt;&lt;!--/.columm--&gt;
@@ -92,8 +124,16 @@
 		&lt;h3&gt;Website Redesign&lt;/h3&gt;
 
 		&lt;p&gt;
-			This website redesign introduces consumers to the world of ancient grains - serving both to educate and sell the truRoots product.
+			This website redesign introduces consumers to the world of ancient grains - serving both to educate and to sell the brand's product.
 		&lt;/p&gt;
+
+		At Smith Bros Agency, I led both the design and development efforts on this project to:
+
+		&lt;ul&gt;
+			&lt;li&gt;Design a site that would educate users on ancient grains through the use of beautifully shot macro images of the ingredients&lt;/li&gt;
+			&lt;li&gt;Create a responsive and standardized front-end framework&lt;/li&gt;
+			&lt;li&gt;Work within J.M. Smucker's ecosystem to build a website using an MVC framework and to make calls to their various web services to pull in product &amp;amp; recipe data&lt;/li&gt;
+		&lt;/ul&gt;
 
 		&lt;a href=&quot;http://truroots.com/&quot; target=&quot;_blank&quot;&gt;Visit website&lt;/a&gt;
 
@@ -116,12 +156,78 @@
 
 		&lt;div class=&quot;column column--2&quot;&gt;
 
+			&lt;a class=&quot;tout&quot; href=&quot;/work/tribe-hummus.html&quot;&gt;
+				&lt;img src=&quot;/assets/img/work/tribe-hummus/tribe-hummus.jpg&quot; alt=&quot;Tribe Hummus&quot; /&gt;
+				&lt;div class=&quot;tout__description&quot;&gt;
+	            	&lt;span class=&quot;tout__description__title&quot;&gt;Tribe Hummus&lt;/span&gt;
+	            	&lt;span class=&quot;tout__description__link&quot;&gt;View project&lt;/span&gt;
+	            &lt;/div&gt;
+			&lt;/a&gt;&lt;!--/.tout--&gt;
+
 			&lt;a class=&quot;tout&quot; href=&quot;/work/grove-city-college.html&quot;&gt;
 				&lt;img src=&quot;/assets/img/work/grove-city-college/gcc.jpg&quot; alt=&quot;Grove City College&quot; /&gt;
+				&lt;div class=&quot;tout__description&quot;&gt;
+	            	&lt;span class=&quot;tout__description__title&quot;&gt;Grove City College&lt;/span&gt;
+	            	&lt;span class=&quot;tout__description__link&quot;&gt;View project&lt;/span&gt;
+	            &lt;/div&gt;
+			&lt;/a&gt;&lt;!--/.tout--&gt;
+
+		&lt;/div&gt;&lt;!--/.columm--&gt;
+
+	&lt;/div&gt;&lt;!--/.wrapper--&gt;
+&lt;/section&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Tribe Hummus</title><link href="/work/tribe-hummus.html" rel="alternate" type="text/html" title="Tribe Hummus" /><published>2018-01-15T00:00:00-05:00</published><updated>2018-01-15T00:00:00-05:00</updated><id>/work/tribe-hummus</id><content type="html" xml:base="/work/tribe-hummus.html">&lt;section class=&quot;content&quot;&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+
+		&lt;h2&gt;Tribe Hummus&lt;/h2&gt;
+		&lt;h3 class=&quot;subheadline&quot;&gt;Website Redesign&lt;/h3&gt;
+
+		&lt;p&gt;
+			After going through a major brand redesign, Tribe Hummus wanted a website that would showcase their new, clean label.
+		&lt;/p&gt;
+
+		My role on this project was to lead the development with Smith Bros Agency to:
+
+		&lt;ul&gt;
+			&lt;li&gt;Quickly build interactive prototypes based off of style tiles, craft UI components and page layouts&lt;/li&gt;
+			&lt;li&gt;Create a super fast, mobile-first website that utilizes Jekyll’s static site-generator and Gulp for further automation tasks&lt;/li&gt;
+			&lt;li&gt;Clearly communicate and work with a team based out of Israel to successfully launch the site on the client's [Nestle] servers&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;!--&lt;a href=&quot;www.tribehummus.com&quot; target=&quot;_blank&quot;&gt;Visit website&lt;/a&gt;--&gt;
+
+	&lt;/div&gt;&lt;!--/.wrapper--&gt;
+&lt;/section&gt;&lt;!--/.content--&gt;
+
+&lt;section&gt;
+	&lt;div class=&quot;wrapper wrapper--no-padding&quot;&gt;
+
+		&lt;picture&gt;
+            &lt;source srcset=&quot;/assets/img/work/tribe-hummus/hero-m.jpg&quot; media=&quot;(max-width: 768px)&quot;&gt;
+            &lt;img srcset=&quot;/assets/img/work/tribe-hummus/hero.jpg&quot; alt=&quot;Tribe Hummus&quot; /&gt;
+        &lt;/picture&gt;
+
+	&lt;/div&gt;&lt;!--/.wrapper--&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+	&lt;div class=&quot;wrapper wrapper--no-padding&quot;&gt;
+
+		&lt;div class=&quot;column column--2&quot;&gt;
+
+			&lt;a class=&quot;tout&quot; href=&quot;/work/grove-city-college.html&quot;&gt;
+				&lt;img src=&quot;/assets/img/work/grove-city-college/gcc.jpg&quot; alt=&quot;Grove City College&quot; /&gt;
+				&lt;div class=&quot;tout__description&quot;&gt;
+	            	&lt;span class=&quot;tout__description__title&quot;&gt;Grove City College&lt;/span&gt;
+	            	&lt;span class=&quot;tout__description__link&quot;&gt;View project&lt;/span&gt;
+	            &lt;/div&gt;
 			&lt;/a&gt;&lt;!--/.tout--&gt;
 
 			&lt;a class=&quot;tout&quot; href=&quot;/work/art-institutes.html&quot;&gt;
 				&lt;img src=&quot;/assets/img/work/art-institutes/ai.jpg&quot; alt=&quot;Art Institutes&quot; /&gt;
+				&lt;div class=&quot;tout__description&quot;&gt;
+	            	&lt;span class=&quot;tout__description__title&quot;&gt;The Art Institutes&lt;/span&gt;
+	            	&lt;span class=&quot;tout__description__link&quot;&gt;View project&lt;/span&gt;
+	            &lt;/div&gt;
 			&lt;/a&gt;&lt;!--/.tout--&gt;
 
 		&lt;/div&gt;&lt;!--/.columm--&gt;
