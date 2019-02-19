@@ -455,10 +455,6 @@ h6 {
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
   margin-bottom: 0.25em; }
 
-::-moz-selection {
-  background-color: #fff;
-  text-shadow: none; }
-
 ::selection {
   background-color: #fff;
   text-shadow: none; }
@@ -509,10 +505,6 @@ blockquote {
 mark {
   padding: 0 3px;
   background-color: #fff; }
-
-::-moz-selection {
-  background-color: #fff;
-  text-shadow: none; }
 
 ::selection {
   background-color: #fff;
@@ -821,7 +813,7 @@ section {
   display: grid; }
   .column--1, .column--2, .column--2t, .column--3, .column--4 {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -832,16 +824,16 @@ section {
   @media (min-width: 768px) {
     .column--2 {
       -ms-grid-columns: 1fr 1fr;
-          grid-template-columns: 1fr 1fr; }
+      grid-template-columns: 1fr 1fr; }
     .column--2t {
       -ms-grid-columns: 2fr 1fr;
-          grid-template-columns: 2fr 1fr; }
+      grid-template-columns: 2fr 1fr; }
     .column--3 {
       -ms-grid-columns: (1fr)[3];
-          grid-template-columns: repeat(3, 1fr); }
+      grid-template-columns: repeat(3, 1fr); }
     .column--4 {
       -ms-grid-columns: (1fr)[4];
-          grid-template-columns: repeat(4, 1fr); } }
+      grid-template-columns: repeat(4, 1fr); } }
 
 header h1 {
   text-align: center;
@@ -854,10 +846,13 @@ header h1 {
 
 header .logo {
   background-color: rgba(255, 255, 255, 0.25);
-  padding: 0.25em;
-  display: inline-block; }
+  display: inline-block;
+  padding: .125em; }
   header .logo:hover, header .logo:focus, header .logo:active {
     background-color: rgba(255, 255, 255, 0.75); }
+  header .logo__img {
+    width: 32px;
+    height: 37px; }
 
 footer {
   background-color: #343434;

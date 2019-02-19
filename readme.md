@@ -23,13 +23,13 @@ This project is a static HTML site utilizing the Jekyll site generator and Gulp 
 
 ### Task Management / Build Process
 
-Development takes place in /src, and when you run 'gulp' there is a task for jekyll to build the site in /dist. The css/scss and javascript for the site takes place in /src/_assets-src, and when you run 'gulp' there is a task that compiles, concatentates, and minizmize these files and places them in /src/assets (the jekyll task then copies /src/assets to /dist/assets, so you don't have to worry about moving any of these files).
+Development takes place in /src, and when you run 'gulp' there is a task for jekyll to build the site in /dist. The css and javascript for the site takes place in /src/_assets-src, and when you run 'gulp' there is a task that compiles, concatentates, and minizmize these files and places them in /src/assets (the jekyll task then copies /src/assets to /dist/assets, so you don't have to worry about moving any of these files).
 
 The default [gulp](http://gulpjs.com/) task `gulp` will run the following tasks:
 
 ----
 
-#### SCSS/CSS: `gulp styles`
+#### CSS: `gulp styles`
 
 - Compiles the SCSS partials in /src/_assets-src/scss/ 
          
